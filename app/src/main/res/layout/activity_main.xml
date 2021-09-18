@@ -1,43 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/birthYear"
-        android:layout_width="197dp"
-        android:layout_height="21dp"
-        android:text="Enter your Year of Birth"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="124dp" />
-
-    <Button
-        android:id="@+id/calculateYear"
+        android:id="@+id/yearText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="259dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="191dp"
+        android:text="Enter your Year of Birth"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="87dp" />
 
     <EditText
-        android:id="@+id/enterYear"
+        android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="296dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="YEAR:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="165dp" />
+        android:onClick="onSubmit"
+        android:text="Year:"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="46dp"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="282dp" />
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="377dp" />
-</LinearLayout>
+        android:layout_width="82dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="244dp"
+        android:text="AGE:"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="398dp" />
+</RelativeLayout>
